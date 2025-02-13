@@ -18,7 +18,7 @@ public class Main {
             playerChoice = scanner.nextLine().toLowerCase();
 
             if(!playerChoice.equals("rock") && !playerChoice.equals("paper") && !playerChoice.equals("scissors")){
-                System.out.println("Seriously a" +playerChoice " bro?");
+                System.out.println("Seriously a" + playerChoice + " bro?");
                 continue;
             }
 
