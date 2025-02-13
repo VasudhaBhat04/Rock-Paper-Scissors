@@ -18,7 +18,7 @@ public class RPS {
             playerChoice = scanner.nextLine().toLowerCase();
 
             if(!playerChoice.equals("rock") && !playerChoice.equals("paper") && !playerChoice.equals("scissors")){
-                System.out.println("Seriously a" + playerChoice + " bro?");
+                System.out.println("Seriously a" + playerChoice );
                 continue;
             }
 
@@ -31,10 +31,10 @@ public class RPS {
             else if((playerChoice.equals("rock") && computerChoice.equals("scissors")) ||
                        (playerChoice.equals("paper") && computerChoice.equals("rock")) ||
                        (playerChoice.equals("scissors") && computerChoice.equals("paper"))){
-                System.out.println("You win!Yayyy...not a big deal but congrats");
+                System.out.println("You win!");
             }
             else{
-                System.out.println("You lose!! Hahahaha");
+                System.out.println("You lose!! ");
             }
 
             System.out.print("Enter Y to play again or press any character to Stop the game ");
@@ -42,7 +42,7 @@ public class RPS {
 
         }while(playAgain.equals("Y"));
 
-        System.out.println("Thanks for playing ! Bye.Have a great time ahead.");
+        System.out.println("Thanks for playing ! Bye.");
 
         scanner.close();
     }
